@@ -42,3 +42,8 @@ async def get_data():
         "served_by": INSTANCE_ID,
         "hostname": HOSTNAME
     }
+
+@app.get("/version")
+async def version():
+    """Return API version."""
+    return {"version": "1.0.0"}
