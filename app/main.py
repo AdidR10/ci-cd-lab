@@ -43,6 +43,7 @@ async def get_data():
         "hostname": HOSTNAME
     }
 
+
 @app.get("/version")
 async def version():
     """Return API version."""
